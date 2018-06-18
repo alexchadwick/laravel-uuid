@@ -22,7 +22,7 @@ Discovered Package: alexchadwick/laravel-uuid
 
 ## Usage
 
-To generate UUID
+#### To generate UUID
 
 ```php
 $uuid = (string) Uuid::generate()
@@ -34,7 +34,7 @@ OR
 $uuid = Uuid::generate()->string
 ```
 
-To generate specific version of UUID
+#### To generate specific version of UUID
 ```php
 //generate UUIDv4
 $uuid = (string) Uuid::generate(4)
@@ -53,7 +53,7 @@ The built in Trait "HasUuidPrimaryKey", will automatically generate a UUIDv4 and
 
 This will not affect model events since the Trait makes uses Laravel Model's bootTraits() function.
 
-### Validation
+## Validation
 Using the Laravel validator, you can now pass the rule name "uuid" to validate UUIDs.
 
 Laravel validator rule example
@@ -61,6 +61,6 @@ Laravel validator rule example
 'YOUR-UUID-FIELD' => 'uuid'
 ```
 
-#### Running tests
+## Running tests
 
 Tests are location in ./test, run phpunit to run built test.
