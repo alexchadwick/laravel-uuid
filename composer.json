@@ -1,0 +1,39 @@
+{
+    "name": "alexchadwick/laravel-uuid",
+    "license" : [
+        "MIT"
+    ],
+    "require" : {
+        "php" : "^7.0"
+    },
+    "support" : {
+        "source" : "https://github.com/alexchadwick/laravel-uuid",
+        "issues" : "https://github.com/alexchadwick/laravel-uuid/issues"
+    },
+    "description": "Laravel UUID generator, supports version 4 UUIDs",
+    "homepage" : "https://github.com/alexchadwick/laravel-uuid",
+    "authors": [
+        {
+            "name": "Alexander Chadwick",
+            "email": "alex@digitekstudio.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "AlexChadwick\\Uuid\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AlexChadwick\\Uuid\\UuidServiceProvider"
+            ],
+            "aliases": {
+                "Uuid": "AlexChadwick\\Uuid\\Uuid"
+            }
+        }
+    },
+    "require-dev" : {
+        "phpunit/phpunit": "~6.0"
+    }
+}
